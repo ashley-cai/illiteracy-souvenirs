@@ -1,0 +1,19 @@
+{
+  "name": "illiteracy-souvenirs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashley-cai/illiteracy-souvenirs.git"
+  },
+  "author": "Ashley Cai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashley-cai/illiteracy-souvenirs/issues"
+  },
+  "homepage": "https://github.com/ashley-cai/illiteracy-souvenirs#readme"
+}

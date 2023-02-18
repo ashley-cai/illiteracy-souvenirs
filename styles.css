@@ -1,3 +1,7 @@
+:root {
+    --red: #FF2525;
+}
+
 @font-face {
     font-family: "ArgentPixel";
     src: url("fonts/ArgentPixelCF-Regular.woff") format('woff');
@@ -9,8 +13,30 @@
     src: url("fonts/GT-Cinetype-Regular.ttf");
   }
 
-  #sentence {
-    font-family: "Arial";
-    font-size: 80px;
+  @font-face {
+    font-family: "IBMPlexMono";
+    src: url("fonts/IBMPlexMono-Regular.otf");
   }
 
+
+  #sentence {
+    margin-top: 0;
+    font-family: "IBMPlexMono";
+    font-size: 4.5em;
+    line-height: 125%;
+    color: white;
+  }
+
+  #words-container {
+    padding: 5vh;
+    width: 80vw;
+  }
+
+  #guess {
+    border: none;
+    background-color: blue;
+  }
+
+  body {
+    background-color: var(--red);
+  }

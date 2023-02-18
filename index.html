@@ -6,9 +6,13 @@
   <body>
     <script src="index.js"></script>
 
-    <p id="sentence">█</p>
+    <div id = "words-container">
+        <p id="sentence">█</p>
 
-    <input type="text" id="name" placeholder="Guess">
+        <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
+            <input type="text" id="guess" placeholder="Guess">
+        </form>
+    </div>
 
   </body>
 </html>

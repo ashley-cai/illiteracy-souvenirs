@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "ArgentPixel";
+    src: url("fonts/ArgentPixelCF-Regular.woff") format('woff');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "GTCinetype";
+    src: url("fonts/GT-Cinetype-Regular.ttf");
+  }
+
+  #sentence {
+    font-family: "Arial";
+    font-size: 80px;
+  }
+

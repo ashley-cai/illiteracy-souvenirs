@@ -1,0 +1,184 @@
+:root {
+    --red: #FF2525;
+    --blue: #0075FF;
+    --darkred: #921E1E;
+    --yellow: #FFE600;
+}
+
+@font-face {
+    font-family: "ArgentPixel";
+    src: url("fonts/ArgentPixelCF-Regular.woff") format('woff');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "GTCinetype";
+    src: url("fonts/GT-Cinetype-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "IBMPlexMono";
+    src: url("fonts/IBMPlexMono-Regular.otf");
+  }
+
+  @font-face {
+    font-family: "GTPressuraMono";
+    src: url("fonts/GT-Pressura-LCGV-Mono-Text.ttf");
+  }
+
+  #sentence {
+    @media (orientation: portrait) {
+      font-size: 5em;
+    }
+    margin-top: 0;
+    font-family: "GTCinetype";
+    font-size: 4em;
+    line-height: 125%;
+    color: white;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .redacted {
+    background-color: white;
+  }
+
+  #big-container {
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }  
+
+  #words-container {
+    @media (orientation: portrait) {
+      width: 80vw;
+    }
+    position: relative;
+    width: 70vw;
+  }
+
+  #about {
+    @media (orientation: portrait) {
+      width: 6vw;
+      height: 6vw;
+      font-size: 3em;
+      line-height: 6vw;
+    }
+    width: 2vw;
+    height: 2vw;
+    padding: 1vw;
+    font-size: 2em;
+    line-height: 2vw;
+    text-align: center;
+    font-family: "GTCinetype";
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    color: white;
+    background-color: var(--darkred);
+  }
+
+  #about-modal {
+    @media (orientation: portrait) {
+      width: 75vw;
+      font-size: 2.5em;
+      padding: 10vw;
+      padding-top: 15vw;
+      padding-bottom: 15vw;
+      top: 10vh;
+    }
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: var(--darkred);
+    top: 20vh;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    font-family: "GTCinetype";
+    font-size: 1em;
+    padding: 8vw;
+    #x {
+      @media (orientation: portrait) {
+        font-size: 1em;
+        transform: translate(72vw, -7vh);
+      }
+      padding: 5vw;
+      position: absolute;
+      font-size: 1em;
+      transform: translate(30vw, -22vh);
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+    }
+  }
+
+
+
+  #form-container {
+    @media (orientation: portrait) {
+      bottom: 40vh;
+    }
+    width: 90vw;
+    margin-top: auto;
+    bottom: 3vw;
+    position: absolute;
+  }
+
+  #guess {
+    width: 100%;
+    border: none;
+    height: 1.1em;
+    font-size: 5em;
+    font-family: "GTCinetype";
+    padding: 1vh;
+    background-color: var(--blue);
+    color: white;
+  }
+
+  #guess:focus {
+    border: none;
+  }
+
+  #answer-button {
+    @media (orientation: portrait) {
+      font-size: 2.5em;
+      padding: 2vw;
+      margin-bottom: 3vw;
+    }
+    color: white;
+    background-color: var(--darkred);
+    margin-bottom: 1vw;
+    padding: .5vw;
+    font-size: 1.5em;
+    border: none;
+    font-family: "GTCinetype";
+  }
+
+  #answer-modal {
+    @media (orientation: portrait) {
+      font-size: 5em;
+      padding: 3vw;
+    }
+    width: 100%;
+    padding: 1vw;
+    font-size: 4em;
+    line-height: 120%;
+    background-color: var(--yellow);
+    font-family: "GTCinetype";
+    position: absolute;
+    display: none;
+    bottom: 1vh;
+    transition: opacity 0.15s ease-out, width 0s linear 0.15s, height 0s linear 0.15s;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+  }
+
+  body {
+    background-color: var(--red);
+  }

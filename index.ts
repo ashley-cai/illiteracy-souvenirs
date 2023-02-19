@@ -1,7 +1,5 @@
-
-
 let sentences: string[] = ["When are you free to give me a haircut? Please let me know, and remember to bring the hairdressing tools!"]
-
+let answerSentences: string[] = ["你什么时候有空可以给我剪头发？请告诉我，记得带理发工具！"]
 let exceptionWords: string[] = ["a","when","you","to","please","me","and","the"," ",".","?","!",","]
 
 let words: string[];
@@ -22,7 +20,9 @@ function initializeSentence(){
     //get printable version of redacted sentence and display
     sentenceObject = document.getElementById("sentence")!
     sentenceObject!.innerHTML = sentenceFromList(redactedWords);
-    console.log(words)
+
+    let answerModal = document.getElementById("answer-modal")!
+    answerModal.innerHTML = answerSentences[0]
 }
 
 //Returns printable version of sentence from array of string
@@ -48,7 +48,7 @@ function redactSentence(words: string[]) {
     let redactedWords: string[] = []
     for (let i = 0; i < words.length; ++i) {
         if (!exceptionWords.includes(words[i].toLowerCase())) {
-            redactedWords.push(redactedGenerator(words[i].length))
+            redactedWords.push(redactedGenerator(words[i]))
         }
         else {
             redactedWords.push(words[i])
@@ -58,12 +58,8 @@ function redactSentence(words: string[]) {
 }
 
 //returns redacted string based on given length -- used by redactSentence
-function redactedGenerator(length: number) {
-    let str = '';
-    for (let i = 0; i < length; ++i) {
-        str += '█';
-    }
-    return str;
+function redactedGenerator(str: string) {
+    return "<span class='redacted'>" + str + "</span>";
 }
 
 //Handles guesses from the guess input text box, unredacts if there is a match
@@ -78,6 +74,25 @@ function guess() {
         sentenceObject!.innerHTML = sentenceFromList(redactedWords);
     }
 }
+
+function answerButton() {
+    let answer = document.getElementById("answer-modal")
+    let formObject = document.getElementById("guess")
+    console.log("ayo")
+    answer.style.display = "inline";
+    formObject.style.opacity = "0%";
+}
+
+function aboutButton() {
+    let abtModal = document.getElementById('about-modal')
+    abtModal.style.display="inline"
+}
+
+function closeAboutModal() {
+    let abtModal = document.getElementById('about-modal')
+    abtModal.style.display="none"
+}
+
 
 window.onload = function() {
     initializeSentence();

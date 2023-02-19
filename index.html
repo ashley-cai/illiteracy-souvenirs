@@ -6,12 +6,27 @@
   <body>
     <script src="index.js"></script>
 
-    <div id = "words-container">
-        <p id="sentence">█</p>
 
-        <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
-            <input type="text" id="guess" placeholder="Guess">
-        </form>
+    <div id="big-container">
+
+        <div id = "words-container">
+            <p id="sentence">█</p>
+        </div>
+        <div id="about" onclick="javascript:aboutButton()">?</div>
+
+        <div id="form-container">
+            <div id="answer-modal"></div>
+            <button id="answer-button" onclick="javascript:answerButton()" >GIVE UP</button>
+            <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
+                <input type="text" id="guess" placeholder="GUESS">
+            </form>
+        </div>
+    </div>
+
+    <div id=""></div>
+    <div id="about-modal">
+        <div id="x" onclick="javascript:closeAboutModal()">X</div>
+        This capsule game emulates my experience reading my grandmas' texts – fractured, frustrating, and shameful. My illiteracy in Chinese is perpetually fraught with an aching loss: not just of the ability to read the language, but of the ability to ever fully connect with my family. Infer the missing words and enter your guesses in the text box.
     </div>
 
   </body>

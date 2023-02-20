@@ -12,16 +12,18 @@
         <div id = "words-container">
             <p id="sentence">█</p>
         </div>
-        <div id="about" onclick="javascript:aboutButton()">?</div>
+        <div id="about" onclick="javascript:aboutButton()">ABOUT</div>
 
         <div id="form-container">
               <button id="answer-button" onclick="javascript:answerButton()" >GIVE UP</button>
               <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
                   <input type="text" id="guess" placeholder="GUESS A WORD">
               </form>
-              <div class="icon" id="icon" onclick="javascript:guess()">
+
+              <!-- <div class="icon" id="icon" onclick="javascript:guess()">
                 <div class="arrow" id="arrow"></div>
-              </div>
+              </div> -->
+
               <div id="answer-modal"></div>
         </div>
     </div>

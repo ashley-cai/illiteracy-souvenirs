@@ -59,24 +59,23 @@
 }
 
 #about {
-  width: 2vw;
-  height: 2vw;
-  padding: 1vw;
-  font-size: 3em;
+  padding: 0.5vw;
+  font-size: 1.5em;
   line-height: 2vw;
   text-align: center;
   font-family: "GTCinetype";
   position: absolute;
   top: 4vw;
-  right: 4vw;
+  right: 5vw;
   color: white;
   background-color: var(--darkred);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 @media (orientation: portrait) {
   #about {
-    width: 6vw;
-    height: 6vw;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 6vw;
   }
 }
@@ -206,16 +205,9 @@ body {
 .icon {
   position: relative;
   float: right;
-  transform: translate(0, -6vw);
   width: 80px;
   cursor: pointer;
 }
-@media (orientation: portrait) {
-  .icon {
-    transform: translate(0, -10vw);
-  }
-}
-
 .arrow {
   position: absolute;
   top: 25px;

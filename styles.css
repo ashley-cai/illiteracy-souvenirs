@@ -85,7 +85,7 @@
   z-index: 1;
   position: absolute;
   color: white;
-  background-color: var(--darkred);
+  background-color: var(--red);
   top: 20vh;
   left: 0;
   right: 0;

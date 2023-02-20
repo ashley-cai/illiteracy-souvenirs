@@ -54,7 +54,7 @@
 }
 @media (orientation: portrait) {
   #words-container {
-    width: 80vw;
+    width: 70vw;
   }
 }
 
@@ -77,6 +77,7 @@
   #about {
     font-size: 2em;
     line-height: 6vw;
+    padding: 1.5vw;
   }
 }
 

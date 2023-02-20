@@ -1,6 +1,8 @@
-let sentences: string[] = ["When are you free to give me a haircut? Please let me know, and remember to bring the hairdressing tools!"]
-let answerSentences: string[] = ["你什么时候有空可以给我剪头发？请告诉我，记得带理发工具！"]
-let exceptionWords: string[] = ["a","when","you","to","please","me","and","the"," ",".","?","!",","]
+let sentences: string[] = ["When are you free to give me a haircut? Please let me know, and remember to bring the hairdressing tools!",
+"Excited to see you soon at home during your summer vacation!"]
+let answerSentences: string[] = ["你什么时候有空可以给我剪头发？请告诉我，记得带理发工具", 
+"盼你暑假早日回家相聚!"]
+let exceptionWords: string[] = ["at", "your", "a","when","you","to","please","me","and","the"," ",".","?","!",","]
 
 let words: string[];
 let lowercaseWords: string[];
@@ -10,7 +12,9 @@ let sentenceObject: HTMLElement;
 //Randomly picks a sentence from the list of sentences and initializes/displays it
 function initializeSentence(){
     //temporary
-    let str = sentences[0]
+    let num = Math.floor(Math.random() * (sentences.length));
+    console.log(num)
+    let str = sentences[num]
 
     //split sentence into separate pieces and store in 2 lists - nonredacted and redacted
     words = str.match(/\w+|\s+|[^\s\w]+/g)!
@@ -22,7 +26,7 @@ function initializeSentence(){
     sentenceObject!.innerHTML = sentenceFromList(redactedWords);
 
     let answerModal = document.getElementById("answer-modal")!
-    answerModal.innerHTML = answerSentences[0]
+    answerModal.innerHTML = answerSentences[1]
 }
 
 //Returns printable version of sentence from array of string
@@ -78,9 +82,11 @@ function guess() {
 function answerButton() {
     let answer = document.getElementById("answer-modal")
     let formObject = document.getElementById("guess")
-    console.log("ayo")
+    let answerButton = document.getElementById("answer-button")
+
     answer.style.display = "inline";
     formObject.style.opacity = "0%";
+    answerButton.style.opacity = "0%";
 }
 
 function aboutButton() {

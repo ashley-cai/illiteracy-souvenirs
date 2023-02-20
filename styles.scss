@@ -104,17 +104,16 @@
     #x {
       @media (orientation: portrait) {
         font-size: 1em;
-        transform: translate(72vw, -7vh);
+        transform: translate(2vh, -5vh);
       }
-      padding: 5vw;
-      position: absolute;
-      font-size: 1em;
-      transform: translate(30vw, -22vh);
+      float: right;
+      // font-size: 1em;
       -webkit-user-select: none; /* Safari */
       -ms-user-select: none; /* IE 10 and IE 11 */
       user-select: none; /* Standard syntax */
     }
   }
+  
 
 
 
@@ -161,7 +160,8 @@
   #answer-modal {
     @media (orientation: portrait) {
       font-size: 5em;
-      padding: 3vw;
+      padding-top: 3vw;
+      padding-bottom: 3vw;
     }
     width: 100%;
     padding: 1vw;

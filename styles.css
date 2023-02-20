@@ -92,7 +92,7 @@
   width: 30vw;
   font-family: "GTCinetype";
   font-size: 1.1em;
-  padding: 8vw;
+  padding: 10vw;
 }
 @media (orientation: portrait) {
   #about-modal {
@@ -106,7 +106,7 @@
 }
 #about-modal #x {
   float: right;
-  transform: translate(6vw, -6vw);
+  transform: translate(6vw, -7vw);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -237,6 +237,12 @@ body {
 
 body {
   background-color: var(--red);
+}
+
+#title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

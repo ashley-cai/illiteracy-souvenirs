@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="styles.css">    
   </head>
   <body>
+    <script>var exports = {};</script>
     <script src="index.js"></script>
-
 
     <div id="big-container">
 
@@ -15,11 +15,14 @@
         <div id="about" onclick="javascript:aboutButton()">?</div>
 
         <div id="form-container">
-            <div id="answer-modal"></div>
-            <button id="answer-button" onclick="javascript:answerButton()" >GIVE UP</button>
-            <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
-                <input type="text" id="guess" placeholder="GUESS">
-            </form>
+              <button id="answer-button" onclick="javascript:answerButton()" >GIVE UP</button>
+              <form id = "guess-form" action = "javascript:guess()" autocomplete="off" >
+                  <input type="text" id="guess" placeholder="GUESS A WORD">
+              </form>
+              <div class="icon" id="icon" onclick="javascript:guess()">
+                <div class="arrow" id="arrow"></div>
+              </div>
+              <div id="answer-modal"></div>
         </div>
     </div>
 
@@ -27,7 +30,8 @@
     <div id="about-modal">
         <div id="x" onclick="javascript:closeAboutModal()">X</div>
         This capsule game emulates my experience reading my grandmas' texts – fractured, frustrating, and shameful. My illiteracy in Chinese is perpetually fraught with an aching loss: not just of the ability to read the language, but of the ability to ever fully connect with my family. Infer the missing words and enter your guesses in the text box.
+      
     </div>
-
+    <script src="https://unpkg.com/emojisplosion/lib/global.js"></script>
   </body>
 </html>

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ashley-cai/illiteracy-souvenirs/issues"
   },
-  "homepage": "https://github.com/ashley-cai/illiteracy-souvenirs#readme"
+  "homepage": "https://github.com/ashley-cai/illiteracy-souvenirs#readme",
+  "dependencies": {
+    "emojisplosion": "^2.6.1"
+  }
 }

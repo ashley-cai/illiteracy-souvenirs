@@ -117,10 +117,13 @@ function guess() {
             }
         }
     } else {
-        emojisplosion({
-            emojis: ["⛔", "🚫", "🛑", "✋"],
-            fontSize: [40,80]
-          });
+        let guess = document.getElementById("guess")
+        guess.style.backgroundColor = "#921E1E"
+        setTimeout(function(){
+            guess.style.backgroundColor = "#0075FF"
+       },500); // for 1s = 1000ms
+       
+
     }
 }
 
@@ -153,11 +156,16 @@ function answerButton() {
 function aboutButton() {
     let abtModal = document.getElementById('about-modal')
     abtModal.style.display="inline"
+    let shade = document.getElementById('shade')
+    shade.style.display="inline"
 }
 
 function closeAboutModal() {
     let abtModal = document.getElementById('about-modal')
     abtModal.style.display="none"
+    let shade = document.getElementById('shade')
+    shade.style.display="none"
+
 }
 
 window.onload = function() {

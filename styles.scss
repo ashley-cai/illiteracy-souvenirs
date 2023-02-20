@@ -89,6 +89,7 @@
       padding-bottom: 15vw;
       top: 10vh;
     }
+    z-index: 1;
     position: absolute;
     color: white;
     background-color: var(--darkred);
@@ -242,4 +243,14 @@
     font-size: 1.5em;
     text-align: center;
     margin-top: 0;
+  }
+
+  #shade {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 60%;
   }

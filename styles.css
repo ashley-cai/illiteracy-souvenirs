@@ -54,7 +54,7 @@
 }
 @media (orientation: portrait) {
   #words-container {
-    width: 70vw;
+    width: 75vw;
   }
 }
 
@@ -128,7 +128,7 @@
 }
 @media (orientation: portrait) {
   #form-container {
-    bottom: 40vh;
+    bottom: 35vh;
   }
 }
 

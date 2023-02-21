@@ -254,3 +254,8 @@
     background-color: black;
     opacity: 60%;
   }
+
+  html,body{
+    -webkit-overflow-scrolling : touch !important;
+    overflow: auto !important;
+}

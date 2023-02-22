@@ -23,7 +23,7 @@ let answerSentences = ["你什么时候有空可以给我剪头发？请告诉�
 ];
 let exceptionWords = ["at", "your", "a", "when", "you", "to", "please", "me", "and", "the", " ", ".", "?", "!", ",", "my", "happy", "in",
     "please", "the", "i", "a", "be", "to", "her", "him", "with", "how", "still", "just", "about", "is", "if", "have", "see", "will", ":", "i", "it", "been",
-    "gave", "in", "saw", "on", "that", "some", "red", "give", "sorry"];
+    "gave", "in", "saw", "on", "that", "some", "red", "give", "sorry", "–"];
 let guessedWords = [];
 let words;
 let lowercaseWords;

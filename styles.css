@@ -128,7 +128,8 @@
 }
 @media (orientation: portrait) {
   #form-container {
-    bottom: 35vh;
+    position: relative;
+    margin-top: 15vh;
   }
 }
 

@@ -24,7 +24,7 @@ let answerSentences: string[] = ["你什么时候有空可以给我剪头发？�
 
 let exceptionWords: string[] = ["at", "your", "a","when","you","to","please","me","and","the"," ",".","?","!",",","my","happy","in",
 "please","the","i","a","be","to","her","him","with","how","still","just","about","is","if","have","see","will",":","i","it","been",
-"gave","in","saw","on","that","some", "red", "give","sorry"]
+"gave","in","saw","on","that","some", "red", "give","sorry","–"]
 
 let guessedWords: string[] = []
 

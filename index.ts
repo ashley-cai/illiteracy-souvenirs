@@ -171,10 +171,3 @@ function closeAboutModal() {
 window.onload = function() {
     initializeSentence();
   };
-
-  var el = document.getElementById("editable");
-  var scrollTop = document.body.scrollTop; // save position
-  el.focus();
-  // manipulate selection inside the focused element with `document.createRange()`
-  // and do other stuff
-  document.body.scrollTop = scrollTop;

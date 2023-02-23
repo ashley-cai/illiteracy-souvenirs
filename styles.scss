@@ -28,7 +28,7 @@
 
   #sentence {
     @media (orientation: portrait) {
-      font-size: 5em;
+      font-size: 4.5em;
     }
     margin-top: 0;
     font-family: "GTCinetype";
@@ -259,4 +259,5 @@
   html,body{
     -webkit-overflow-scrolling : touch !important;
     overflow: auto !important;
+    height: 100% !important;
 }
